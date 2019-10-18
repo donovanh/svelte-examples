@@ -1,6 +1,6 @@
 <script>
   import itemStore from "../../state/items.store.js";
-  import { fly } from "svelte/transition";
+  import { scale } from "svelte/transition";
   import { flip } from "svelte/animate";
   import { cubicOut } from "svelte/easing";
 
@@ -35,6 +35,7 @@
     display: flex;
     height: 120px;
     justify-content: center;
+    list-style: none;
     margin: 1rem;
     width: 120px;
   }
@@ -49,16 +50,17 @@
 
 <hr />
 
-<div class="container">
-  {#each $itemStore as item, i (item)}
-    <div
-      animate:flip={{ duration: 500, easing: cubicOut }}
-      transition:fly={{ duration: 500, x: 100, easing: cubicOut }}
-      class="item"
-      on:click={() => {
-        itemStore.removeItem(i);
-      }}>
-      {item}
+<ul class="container">
+  {#each $itemStore as item (item)}
+    <div animate:flip={{ duration: 500, easing: cubicOut }}>
+      <li
+        transition:scale
+        class="item"
+        on:click={() => {
+          itemStore.removeItem(item);
+        }}>
+        {item}
+      </li>
     </div>
   {/each}
-</div>
+</ul>

@@ -12,11 +12,7 @@ const store = writable([
 const customStore = {
   subscribe: store.subscribe,
   addItem: item => store.update(items => items.concat(item)),
-  removeItem: i =>
-    store.update(items => {
-      items.splice(i, 1);
-      return items;
-    })
+  removeItem: item => store.update(items => items.filter(i => i !== item))
 };
 
 export default customStore;
