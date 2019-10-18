@@ -11,7 +11,7 @@
 </style>
 
 <svelte:head>
-  <title>Hello {`{name}`}</title>
+  <title>Example 6</title>
 </svelte:head>
 
 <Slot>

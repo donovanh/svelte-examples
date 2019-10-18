@@ -33,7 +33,7 @@
 </style>
 
 <svelte:head>
-  <title>Hello {`{name}`}</title>
+  <title>Example 3</title>
 </svelte:head>
 
 <input bind:value={input} />

@@ -14,6 +14,10 @@
   export let message;
 </script>
 
+<svelte:head>
+  <title>Example 8</title>
+</svelte:head>
+
 <!-- View source to see this has server rendered -->
 
 <h2>{message}</h2>

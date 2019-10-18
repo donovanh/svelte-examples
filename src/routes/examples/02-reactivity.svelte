@@ -27,7 +27,7 @@
 </style>
 
 <svelte:head>
-  <title>Hello {`{name}`}</title>
+  <title>Example 2</title>
 </svelte:head>
 
 <h2>Reactive variable:</h2>

@@ -40,6 +40,10 @@
   }
 </style>
 
+<svelte:head>
+  <title>Example 9</title>
+</svelte:head>
+
 <input type="text" bind:value placeholder="New item" />
 <button on:click={addItem}>Add Item</button>
 

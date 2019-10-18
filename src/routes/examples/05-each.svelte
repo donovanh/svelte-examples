@@ -11,7 +11,7 @@
 </style>
 
 <svelte:head>
-  <title>Hello {`{name}`}</title>
+  <title>Example 5</title>
 </svelte:head>
 
 <h2>Things:</h2>

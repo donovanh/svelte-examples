@@ -23,4 +23,8 @@
   }
 </style>
 
+<svelte:head>
+  <title>Example 4</title>
+</svelte:head>
+
 <input class:invalid={!isValid} bind:value />
