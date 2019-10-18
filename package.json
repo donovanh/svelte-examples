@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "sapper dev",
     "build": "sapper export",
-    "start": "node __sapper__/build"
+    "start": "node __sapper__/build",
+    "deploy": "now --target production"
   },
   "dependencies": {
     "compression": "^1.7.1",
