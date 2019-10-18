@@ -17,8 +17,10 @@
 
   let textAreaInput = {};
 
+  let size;
+
   function checkSize() {
-    console.log(textAreaInput.clientHeight);
+    size = textAreaInput.clientHeight;
   }
 </script>
 
@@ -44,11 +46,19 @@
 <input type="radio" bind:group={radioInput} value="2" />
 <input type="radio" bind:group={radioInput} value="3" />
 
+<p>
+  <code>{JSON.stringify(radioInput) || ''}</code>
+</p>
+
 <h2>Check it</h2>
 
 <input type="checkbox" bind:group={checkInput} value="1" />
 <input type="checkbox" bind:group={checkInput} value="2" />
 <input type="checkbox" bind:group={checkInput} value="3" />
+
+<p>
+  <code>{JSON.stringify(checkInput) || ''}</code>
+</p>
 
 <h2>Select</h2>
 
@@ -59,6 +69,14 @@
   <option>Guac (extra)</option>
 </select>
 
+<p>
+  <code>{JSON.stringify(selectInput) || ''}</code>
+</p>
+
 <h2>Custom binding</h2>
 
 <textarea bind:this={textAreaInput} on:blur={checkSize}>Input test</textarea>
+
+<p>
+  <code>{size || 'blur to see size'}</code>
+</p>
