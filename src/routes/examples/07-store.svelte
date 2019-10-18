@@ -27,7 +27,7 @@
 <hr />
 
 <ul>
-  {#each $itemStore as item}
+  {#each $itemStore as item (item)}
     <li>{item}</li>
   {/each}
 </ul>
