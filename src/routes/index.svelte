@@ -52,4 +52,7 @@
   <li>
     <a href="/examples/09-transitions">9: Transitions</a>
   </li>
+  <li>
+    <a href="/examples/10-web-component">10: Web Component</a>
+  </li>
 </ul>

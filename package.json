@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "compression": "^1.7.4",
+    "hello-world-web-component-svelte": "0.0.1",
     "polka": "^0.5.2",
     "sirv": "^0.4.2"
   },
