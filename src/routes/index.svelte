@@ -56,3 +56,11 @@
     <a href="/examples/10-web-component">10: Web Component</a>
   </li>
 </ul>
+
+<h2>Other demos</h2>
+
+<ul>
+  <li>
+    <a href="/demos/image-loading">Lazy image loading</a>
+  </li>
+</ul>
